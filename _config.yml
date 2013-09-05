@@ -1,14 +1,13 @@
 name: DLarionov
 pygments: true
 safe: true
-
+timezone: Europe/Moscow
 markdown: kramdown
-
 
 
 title : Dlarionov
 tagline: Site Tagline
 author :
-  name : Denis L
+  name : DLarionov
   email : mail@mail.mail
   github : invisibleman

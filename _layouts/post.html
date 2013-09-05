@@ -9,6 +9,11 @@ layout: default
     </div>
     <div class="body-post">
       {{ content }}
+      <ul class='tags'>
+        {% for tag in page.tags %}
+          <li><a href='{{site.tags['tag']}}'>{{tag}}</a></li>
+        {% endfor %}
+      </ul>
     </div>
     <div class="date">{{ page.date | date_to_string }}</div>
     <div class="clear"></div>
