@@ -11,7 +11,7 @@ layout: default
       {{ content }}
       <ul class='tags'>
         {% for tag in page.tags %}
-          <li><a href='{{site.tags['tag']}}'>{{tag}}</a></li>
+          <li><a href='/tags/{{ tag }}.html'>{{tag}}</a></li>
         {% endfor %}
       </ul>
     </div>
