@@ -1,2 +1,2 @@
-blog.dlarionov.info
-===================
+Goto [blog.dlarionov.info](http://blog.dlarionov.info)
+
