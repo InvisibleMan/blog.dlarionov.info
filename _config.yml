@@ -1,0 +1,14 @@
+name: DLarionov
+pygments: true
+safe: true
+
+markdown: kramdown
+
+
+
+title : Dlarionov
+tagline: Site Tagline
+author :
+  name : Denis L
+  email : mail@mail.mail
+  github : invisibleman
