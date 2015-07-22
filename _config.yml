@@ -1,9 +1,8 @@
 name: DLarionov
-pygments: true
+highlighter: pygments
 safe: true
 timezone: Europe/Moscow
 markdown: kramdown
-
 
 title : Dlarionov
 tagline: Site Tagline

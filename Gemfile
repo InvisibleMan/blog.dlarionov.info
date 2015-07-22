@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'kramdown'
+gem 'jekyll', '~> 2.0'
+gem 'therubyracer'
