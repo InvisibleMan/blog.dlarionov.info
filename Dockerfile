@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER DLarionov <slok69@gmail.com>
+MAINTAINER DLarionov <>
 
 # Install dependencies
 RUN apt-get update
@@ -7,9 +7,9 @@ RUN apt-get install -y ruby ruby-dev build-essential
 # git python
 
 # Set correct local
-RUN locale-gen es_ES.UTF-8
-ENV LANG es_ES.UTF-8
-ENV LC_CTYPE es_ES.UTF-8
+RUN locale-gen en_GB.UTF-8
+ENV LANG en_GB.UTF-8
+ENV LC_CTYPE en_GB.UTF-8
 
 # Create editor userspace
 RUN groupadd octopress
@@ -35,6 +35,6 @@ CMD jekyll serve -H 0.0.0.0
 
 # Powered by https://github.com/slok/docker-octopress
 # USE: docker build -t octopres .
-# USE: docker run -ti -p 4000:4000 -v /home/dlarionov/sync/int/backup/prjs/my/blog.dlarionov.info:/home/octopress/projects octopres
+# USE: docker run -ti -p 4000:4000 -v ~/prjs/my/blog.dlarionov.info:/home/octopress/projects octopres
 # or
-# USE: docker run -d -p 4000:4000 -v /home/dlarionov/sync/int/backup/prjs/my/blog.dlarionov.info:/home/octopress/projects octopres
+# USE: docker run -d -p 4000:4000 -v ~/prjs/my/blog.dlarionov.info:/home/octopress/projects octopres
