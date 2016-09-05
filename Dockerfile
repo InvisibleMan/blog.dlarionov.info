@@ -4,7 +4,6 @@ MAINTAINER DLarionov <>
 # Install dependencies
 RUN apt-get update
 RUN apt-get install -y ruby ruby-dev build-essential
-# git python
 
 # Set correct local
 RUN locale-gen en_GB.UTF-8
@@ -35,6 +34,6 @@ CMD jekyll serve -H 0.0.0.0
 
 # Powered by https://github.com/slok/docker-octopress
 # USE: docker build -t octopres .
-# USE: docker run -ti -p 4000:4000 -v ~/prjs/my/blog.dlarionov.info:/home/octopress/projects octopres
+# USE: docker run -ti -p 4000:4000 -v $(pwd):/home/octopress/projects octopres
 # or
-# USE: docker run -d -p 4000:4000 -v ~/prjs/my/blog.dlarionov.info:/home/octopress/projects octopres
+# USE: docker run -d -p 4000:4000 -v $(pwd):/home/octopress/projects octopres
