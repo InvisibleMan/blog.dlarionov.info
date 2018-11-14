@@ -2,7 +2,8 @@
 layout: post
 date: 2013-03-05 16:31
 title: 'Почти идеальный планшет на Windows 8'
-tags: devices W8 планшет
+tags:
+  - devices
 ---
 
 
