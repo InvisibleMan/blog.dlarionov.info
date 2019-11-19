@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    working_dir: /srv/jekyll
+
+    ports:
+     - "${PORT:-4000}:4000"
+
+    volumes:
+      - "${WORKSPACE:-./}:/srv/jekyll"
